@@ -12,30 +12,32 @@ const divStyle ={
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>JSX</h1>
-        <div className="container">
-          <h1>React App is here!</h1>
-        </div>
-          <p>{number}</p>
-          <p style = {divStyle}>Name: {doctor.name}</p>
-          <p>Designation: {doctor.designation}</p>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person name="Dr. Tareq" profession="Dental Surgeon" ></Person>
+      <Person name="Anonna Ferdaus" profession="software Engineer"></Person>
+      <h3>New Component</h3>
+      <Department email="dr.tareq8092@gmail.com" ></Department>
+      <Department email="tirahman105@gmail.com" ></Department>
     </div>
   );
 }
+
+function Person(props){
+  return (
+    <div className="person">
+          <h1>{props.name}</h1>
+          <p>{props.profession}</p>
+        </div>
+  )
+}
+
+function Department(props){
+  return(
+    <div className="container">
+      <h2>{props.email}</h2>
+    </div>
+  )
+}
+
 
 export default App;
 

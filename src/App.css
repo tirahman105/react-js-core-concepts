@@ -38,8 +38,18 @@
 }
 
 .container{
-  background-color: aqua;
+  background-color: rgb(236, 233, 144);
   padding:10px;
-  border-radius: 50px;
+  border-radius: 20px;
   color: black;
+  border: 3px solid black;
+  margin: 20px;
+}
+
+.person{
+  background-color: bisque;
+  border: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
 }
